@@ -18,6 +18,9 @@ y = np.array(y_biphasic)
 # Testing the function without an interval (single linear model)
 models_single, x_subsets_single, y_pred_subsets_single, combined_bic_single = fit_segmented_linear(x, y, interval_list=[])
 
+# Testing the function with the provided data and interval_list = [10]
+models, x_subsets, y_pred_subsets, combined_bic = fit_segmented_linear(x, y, interval_list=[10])
+
 # Plotting the results for both segmented and single linear models
 plt.figure(figsize=(12, 7))
 
